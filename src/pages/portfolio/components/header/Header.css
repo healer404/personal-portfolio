@@ -1,0 +1,112 @@
+.header-background-container{
+    z-index: 0;
+    height: 100vh;
+}
+.first-triangle{
+    width: 100vw;
+    height: 0;
+    border-bottom: 100vh solid var(--color-bg);
+    border-right: 0 solid transparent;
+    position: relative;
+    z-index: 1;
+    transition: border-bottom .6s linear;
+    transition: border-right .6s linear;
+}
+.second-triangle{
+    width: 100vw;
+    height: 0;
+    border-bottom: 100vh solid var(--color-bg-variant);
+    border-right: 0 solid transparent;
+    position: relative;
+    top: -100vh;
+    z-index: 2;
+    transition: border-bottom .6s linear;
+    transition: border-right .6s linear;
+}
+.third-triangle{
+    width: 100vw;
+    height: 0;
+    border-bottom: 100vh solid var(--primary-color-variant);
+    border-right: 0 solid transparent;
+    position: relative;
+    top: -200vh;
+    z-index: 3;
+    transition: border-bottom .6s linear;
+    transition: border-right .6s linear;
+}
+
+.header-container{
+    position: relative;
+    top: -300vh;
+    height: 100vh;
+    z-index: 3;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+}
+
+.header-social-icons{
+    flex: .5;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+}
+.header-social-icon{
+    color: var(--color-light);
+    margin: 1vh auto;
+}
+.header-social-line{
+    margin: 1vh auto;
+    width: 3px;
+    height: 100px;
+    background-color: var(--color-light);
+}
+
+.header-opening{
+    flex: 11;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-opening-greetings{
+    font-size: 1.2rem;
+}
+.header-opening-banner{
+    font-size: 4rem;
+    letter-spacing: -2px;
+}
+.header-opening-description{
+    width: 60%;
+    font-size: .8rem;
+}
+.header-button-group{
+    padding-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-button-group > .btn{
+    margin: .5vh auto;
+    font-weight: 600;
+}
+
+.header-empty{
+    flex:.5;
+    height: 100vh;
+}
+
+.header-background-container:hover > .first-triangle{
+    border-right: 15vh solid transparent;
+}
+.header-background-container:hover > .second-triangle{
+    border-right: 30vh solid transparent;
+}
+.header-background-container:hover > .third-triangle{
+    border-right: 45vh solid transparent;
+}
