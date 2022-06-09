@@ -9,7 +9,6 @@
     border-right: 0 solid transparent;
     position: relative;
     z-index: 1;
-    transition: border-bottom .6s linear;
     transition: border-right .6s linear;
 }
 .second-triangle{
@@ -20,7 +19,6 @@
     position: relative;
     top: -100vh;
     z-index: 2;
-    transition: border-bottom .6s linear;
     transition: border-right .6s linear;
 }
 .third-triangle{
@@ -31,7 +29,6 @@
     position: relative;
     top: -200vh;
     z-index: 3;
-    transition: border-bottom .6s linear;
     transition: border-right .6s linear;
 }
 
